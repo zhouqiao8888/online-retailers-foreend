@@ -1,0 +1,18 @@
+/* 
+* @Author: zhou qiao
+* @Date:   2019-01-16 21:06:08
+* @Last Modified by:   zhou qiao
+* @Last Modified time: 2019-01-16 21:22:00
+*/
+.nav-simple {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+.nav-simple .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #c60023;
+}

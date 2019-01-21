@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html') %>
+        <title><%= htmlWebpackPlugin.options.title%> - happy mmall电商平台</title>
+    </head>
+    <body>
+        <!--导航栏  -->
+        <%= require('html-loader!./layout/nav-simple.html') %>
+
+        <!-- 侧边栏 -->
+        <div class="page-wrap w">
+            <div class='result-con register-success'>
+                <h1 class="result-title">恭喜您，注册成功！</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">回到首页</a>
+                </div>
+            </div> 
+            <div class='result-con default-success'>
+                <h1 class="result-title">恭喜您，操作成功！</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">回到首页</a>
+                </div>
+            </div>                  
+        </div>
+
+        <!--脚标 -->
+        <%= require('html-loader!./layout/footer.html') %>
+    </body>
+</html> 

@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%= require('html-loader!./layout/html-head.html') %>
+    <head>
+        <%= require('html-loader!./layout/head-common.html') %>
+        <title>happy mmall电商平台</title>
+    </head>
     <body>
-        hello webpack
-        <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>          
-        </script>
+        <!--导航栏  -->
+        <%= require('html-loader!./layout/nav.html') %>
+
+        <!-- 通用头部 -->
+        <%= require('html-loader!./layout/header.html') %>
+
+        <!-- 侧边栏 -->
+        <div class="page-wrap w">
+            <%= require('html-loader!./layout/nav-side.html') %>
+            <div class='content with-nav'>test</div>
+                
+        </div>
+       
+        <!--脚标 -->
+        <%= require('html-loader!./layout/footer.html') %>
     </body>
-</html>
+</html> 
