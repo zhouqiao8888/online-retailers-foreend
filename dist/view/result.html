@@ -1,97 +1,57 @@
-<head><link href="/dist//css/common.css?0d66def1419bc991e996" rel="stylesheet"></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Entry module not found: Error: Cannot resolve 'file' or 'directory' F:\mmall_f  e\src\view\result.html in F:\mmall_fe:
-  Error: Cannot resolve 'file' or 'directory' F:\mmall_fe\src\view\result.html i  n F:\mmall_fe
-  
-  - compiler.js:79 childCompiler.runAsChild
-    [mmall_fe]/[html-webpack-plugin]/lib/compiler.js:79:16
-  
-  - Compiler.js:214 Compiler.<anonymous>
-    [mmall_fe]/[webpack]/lib/Compiler.js:214:10
-  
-  - Compiler.js:403 
-    [mmall_fe]/[webpack]/lib/Compiler.js:403:12
-  
-  - Tapable.js:67 Compiler.next
-    [mmall_fe]/[tapable]/lib/Tapable.js:67:11
-  
-  - CachePlugin.js:40 Compiler.<anonymous>
-    [mmall_fe]/[webpack]/lib/CachePlugin.js:40:4
-  
-  - Tapable.js:71 Compiler.applyPluginsAsync
-    [mmall_fe]/[tapable]/lib/Tapable.js:71:13
-  
-  - Compiler.js:400 Compiler.<anonymous>
-    [mmall_fe]/[webpack]/lib/Compiler.js:400:9
-  
-  - Compilation.js:577 Compilation.<anonymous>
-    [mmall_fe]/[webpack]/lib/Compilation.js:577:13
-  
-  - Tapable.js:60 Compilation.applyPluginsAsync
-    [mmall_fe]/[tapable]/lib/Tapable.js:60:69
-  
-  - Compilation.js:572 Compilation.<anonymous>
-    [mmall_fe]/[webpack]/lib/Compilation.js:572:10
-  
-  - Tapable.js:60 Compilation.applyPluginsAsync
-    [mmall_fe]/[tapable]/lib/Tapable.js:60:69
-  
-  - Compilation.js:567 Compilation.<anonymous>
-    [mmall_fe]/[webpack]/lib/Compilation.js:567:9
-  
-  - Tapable.js:60 Compilation.applyPluginsAsync
-    [mmall_fe]/[tapable]/lib/Tapable.js:60:69
-  
-  - Compilation.js:563 Compilation.<anonymous>
-    [mmall_fe]/[webpack]/lib/Compilation.js:563:8
-  
-  - Tapable.js:60 Compilation.applyPluginsAsync
-    [mmall_fe]/[tapable]/lib/Tapable.js:60:69
-  
-  - Compilation.js:525 Compilation.seal
-    [mmall_fe]/[webpack]/lib/Compilation.js:525:7
-  
-  - Compiler.js:397 Compiler.<anonymous>
-    [mmall_fe]/[webpack]/lib/Compiler.js:397:15
-  
-  - Tapable.js:103 
-    [mmall_fe]/[tapable]/lib/Tapable.js:103:11
-  
-  - Compilation.js:445 Compilation.<anonymous>
-    [mmall_fe]/[webpack]/lib/Compilation.js:445:10
-  
-  - Compilation.js:344 Compilation.errorAndCallback
-    [mmall_fe]/[webpack]/lib/Compilation.js:344:3
-  
-  - Compilation.js:358 Compilation.<anonymous>
-    [mmall_fe]/[webpack]/lib/Compilation.js:358:11
-  
-  - NormalModuleFactory.js:29 onDoneResolving
-    [mmall_fe]/[webpack]/lib/NormalModuleFactory.js:29:20
-  
-  - NormalModuleFactory.js:85 
-    [mmall_fe]/[webpack]/lib/NormalModuleFactory.js:85:20
-  
-  - async.js:726 
-    [mmall_fe]/[async]/lib/async.js:726:13
-  
-  - async.js:52 
-    [mmall_fe]/[async]/lib/async.js:52:16
-  
-  - async.js:241 done
-    [mmall_fe]/[async]/lib/async.js:241:17
-  
-  - async.js:44 
-    [mmall_fe]/[async]/lib/async.js:44:16
-  
-  - async.js:723 
-    [mmall_fe]/[async]/lib/async.js:723:17
-  
-  - async.js:167 
-    [mmall_fe]/[async]/lib/async.js:167:37
-  
-  - UnsafeCachePlugin.js:24 
-    [mmall_fe]/[enhanced-resolve]/lib/UnsafeCachePlugin.js:24:19
-  
-</pre><script type="text/javascript" src="/dist/js/base.js?0d66def1419bc991e996"></script><script type="text/javascript" src="/dist/js/result.js?0d66def1419bc991e996"></script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edg">
+<meta name="keywords" content="happy mmall电商平台">
+<meta name="description" content="happy mmall电商平台教程">
+
+        <title>操作结果 - happy mmall电商平台</title>
+    <link href="/dist//css/common.css?9c84bfc8e00ccdc419f0" rel="stylesheet"><link href="/dist//css/result.css?9c84bfc8e00ccdc419f0" rel="stylesheet"></head>
+    <body>
+        <!--导航栏  -->
+        <div class="nav-simple">
+    <div class="w">
+        <a class="logo">MMALL</a>
+    </div>
+</div>
+
+        <!-- 侧边栏 -->
+        <div class="page-wrap w">
+            <div class='result-con register-success'>
+                <h1 class="result-title">恭喜您，注册成功！</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">回到首页</a>
+                </div>
+            </div> 
+            <div class='result-con default-success'>
+                <h1 class="result-title">恭喜您，操作成功！</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">回到首页</a>
+                </div>
+            </div>                  
+        </div>
+
+        <!--脚标 -->
+         <div class="footer">
+    <div class="w">
+        <!-- target="_blank"表示在新窗口中打开链接 -->
+        <div class="links">
+            <a class="link" href="http://www.runoob.com" target="_blank">菜鸟教程</a>| 
+            <a class="link" href="https://www.baidu.com" target="_blank">百度</a>|  
+            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a>|  
+            <a class="link" href="https://www.zhihu.com" target="_blank">知乎</a>  
+        </div>      
+    </div>
+    <!-- <p>表示是一个段落 -->
+    <p class="copyright">
+        Copyright © ZQ All Rights Reserved
+    </p>
+ </div>
+
+
+ <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js">   
+ </script>          
+       
+    <script type="text/javascript" src="/dist/js/base.js?9c84bfc8e00ccdc419f0"></script><script type="text/javascript" src="/dist/js/result.js?9c84bfc8e00ccdc419f0"></script></body>
+</html> 

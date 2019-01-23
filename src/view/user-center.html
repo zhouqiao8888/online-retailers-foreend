@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html') %>
+         <title>
+            <%= htmlWebpackPlugin.options.title%> - happy mmall电商平台
+        </title>
+    </head>
+    <body>
+        <!--导航栏  -->
+        <%= require('html-loader!./layout/nav.html') %>
+
+        <!-- 通用头部 -->
+        <%= require('html-loader!./layout/header.html') %>
+
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a href="./index.html" class="link">MMALL</a>
+                    <span>></span>
+                    <span class="link-text">个人中心</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 侧边栏 -->
+        <div class="page-wrap w">
+            <%= require('html-loader!./layout/nav-side.html') %>
+            <div class='content with-nav'>test</div>
+                
+        </div>
+       
+        <!--脚标 -->
+        <%= require('html-loader!./layout/footer.html') %>
+    </body>
+</html> 

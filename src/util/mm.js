@@ -2,7 +2,7 @@
 * @Author: zhou qiao
 * @Date:   2019-01-15 19:22:20
 * @Last Modified by:   zhou qiao
-* @Last Modified time: 2019-01-17 13:27:30
+* @Last Modified time: 2019-01-22 19:17:24
 */
 
 'use strict';
@@ -46,6 +46,7 @@ var _mm = {
     // 获取服务器地址
     getServerURL: function(path) {
         return conf.serverHost + path;
+        // return "http://localhost:8080/mmall" + path;
     },
 
     // 获取url参数
@@ -72,15 +73,15 @@ var _mm = {
         alert(msg || '操作失败');
     },
 
-    //姓名、电话等校验
+    //参数校验
     validate: function(value, type) {
-        //非空验证，若非空，返回false
+        //！！非空验证，若为空，返回false
         if('require' == type) {
             return !!value;
         }
         //电话号码验证
         if('phone' == type) {
-            var reg = /^1[34578]\d(9)$/;
+            var reg = /^[1][3,4,5,7,8][0-9]{9}$/;
             return reg.test(value);
         }
         //邮箱格式验证
@@ -92,7 +93,7 @@ var _mm = {
 
     // 通用登陆处理
     doLogin: function() {
-        window.location.href = './login/login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
 
     //跳转到主页
